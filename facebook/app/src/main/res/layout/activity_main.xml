@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/nen"
+    tools:context=".MainActivity">
+<ImageView
+    android:id="@+id/imv_fb"
+    android:layout_marginLeft="@dimen/edt_margin_left"
+    android:layout_marginRight="@dimen/edt_margin_right"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="@dimen/edt_margin_bottom"
+    android:background="@drawable/image_facebook"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_below="@+id/imv_fb"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_marginTop="@dimen/edt_margin_top"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/black"
+        android:background="@drawable/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_email_phone"
+        />
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_marginTop="@dimen/edt_margin_top"
+        android:layout_marginBottom="@dimen/edt_margin_bottom"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/black"
+        android:background="@drawable/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_pass"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/edt_pass"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_marginTop="@dimen/edt_margin_top"
+        android:background="@drawable/login1"
+        android:textColor="@color/white"
+        android:text="@string/text_login"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/btn_sign_up"
+        android:layout_marginLeft="@dimen/edt_margin_left"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/text_padding"
+        android:textColor="@color/white"
+        android:text="@string/text_sign_up"
+        android:textSize="@dimen/text_size_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/login2"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/edt_margin_right"
+        android:layout_marginBottom="5dp"
+        android:text="@string/cham_hoi"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large"
+        />
+</RelativeLayout>
